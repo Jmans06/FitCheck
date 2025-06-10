@@ -67,3 +67,37 @@ body {
     border-radius: 4px;
     cursor: pointer;
   }  
+
+  .faq-container {
+    margin-top: 2rem;
+  }
+  
+  .faq-item {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 1rem 0;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 0;
+  }
+  
+  .faq-item.active .faq-answer {
+    max-height: 200px; /* adjust if answers are longer */
+    padding: 0.5rem 0;
+  }
+  
