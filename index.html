@@ -19,12 +19,37 @@
     <h2>Get Your Perfect Fit.</h2>
     <p>We’re building a tool to help you find your best style. Sign up below to join the waitlist.</p>
 
-    <form action="https://script.google.com/macros/s/AKfycbxojxvZdcj2Uge63kMnnvStkIGfZa6iQjRsjDG-pvXP7HdXYAItr_gznHxhvvWiaGV9rQ/exec" method="POST">
+    <form id="email-form" action="https://script.google.com/macros/s/AKfycbxojxvZdcj2Uge63kMnnvStkIGfZa6iQjRsjDG-pvXP7HdXYAItr_gznHxhvvWiaGV9rQ/exec" method="POST">
         <input type="email" name="email" placeholder="enter your email" required />
-        <input type="hidden" name="_next" value="https://glittering-crepe-152939.netlify.app/">
         <button type="submit">Join Waitlist</button>
       </form>      
   </main>
 
+  <script>
+    document.getElementById("email-form").addEventListener("submit", function(e) {
+      e.preventDefault(); 
+  
+      const form = e.target;
+      const formData = new FormData(form);
+  
+      fetch(form.action, {
+        method: "POST",
+        body: formData
+      })
+      .then(response => {
+        if (response.ok) {
+          setTimeout(() => {
+            window.location.reload();
+          }, 500);
+        } else {
+          alert("There was a problem. Please try again.");
+        }
+      })
+      .catch(error => {
+        console.error("Error!", error.message);
+        alert("There was an error submitting the form.");
+      });
+    });
+  </script>  
 </body>
 </html>
