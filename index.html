@@ -8,7 +8,6 @@
 </head>
 <body>
 
-  <!-- Top Navigation -->
   <header class="top-nav">
     <h1 class="logo">FITCHECK</h1>
     <a href="/faq" class="faq-link">Frequently Asked Questions</a>
@@ -16,16 +15,15 @@
 
   <hr class="divider" />
 
-  <!-- Main Content -->
   <main class="main-content">
     <h2>Get Your Perfect Fit.</h2>
     <p>We’re building a tool to help you find your best style. Sign up below to join the waitlist.</p>
 
-    <!-- Email Form -->
-    <form name="email-signup" method="POST" data-netlify="true">
-      <input type="email" name="email" placeholder="Enter your email" required />
-      <button type="submit">Join Waitlist</button>
-    </form>
+    <form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+        <input type="email" name="email" placeholder="Enter your email" required />
+        <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+        <button type="submit">Join Waitlist</button>
+      </form>      
   </main>
 
 </body>
