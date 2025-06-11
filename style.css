@@ -1,108 +1,131 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 2rem;
-    margin: 0;
-  }
-  
-  .top-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-  }
-  
-  .logo {
-    margin: 0 auto;
-    font-size: 2rem;
-  }
-  
-  .faq-link {
-    position: absolute;
-    right: 2rem;
-    top: 1.5rem;
-    text-decoration: none;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .divider {
-    border: 0;
-    height: 1px;
-    background: #ccc;
-    margin: 1rem 0;
-  }
-  
-  .main-content h2 {
-    font-size: 2rem;
-    font-weight: bold;
-  }
-  
-  .main-content p {
-    margin: 1rem 0;
-    font-size: 1rem;
-    color: #555;
-  }
-  
-  form {
-    margin-top: 2rem;
-  }
-  
-  input[type="email"] {
-    padding: 0.75rem;
-    width: 250px;
-    max-width: 90%;
-    font-size: 1rem;
-    margin-right: 0.5rem;
-    border: 1px solid #aaa;
-    border-radius: 4px;
-  }
-  
-  button {
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  } 
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 2rem;
+  margin: 0;
+}
 
-  .faq-container {
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-family: "Playfair Display", serif;
+  font-weight: 475;
+  margin: auto;
+  font-size: 200;
+}
+
+.faq-link {
+  position: absolute;
+  right: 2rem;
+  top: 1.5rem;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-weight: 550;
+  color: #333;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 1rem 0;
+}
+
+.main-content h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+  font-weight: 150;
+  text-align: left;
+}
+
+.main-content p {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+form {
   margin-top: 2rem;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+input[type="email"] {
+  padding: 0.75rem;
+  width: 250px;
+  max-width: 90%;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+} 
+
+.faq-container {
+margin-top: 2rem;
+max-width: 700px;
+margin-left: auto;
+margin-right: auto;
 }
 
 .faq-item {
-  margin-bottom: 1rem;
-  border-bottom: 1px solid #ccc;
-  overflow: hidden;
-  transition: all 0.3s ease;
+margin-bottom: 1rem;
+overflow: hidden;
+transition: all 0.3s ease;
 }
 
 .faq-question {
-  color: black;
-  width: 100%;
-  background: none;
-  border: none;
-  text-align: left;
-  font-weight: bold;
-  font-size: 1.1rem;
-  padding: 1rem 0;
-  cursor: pointer;
-  outline: none;
+font-family: "Montserrat", sans-serif;
+color: black;
+width: 100%;
+background: none;
+border: 1px solid #ccc;
+border-radius: 999px; /* Oval shape */
+font-weight: 500;
+font-size: 1rem;
+padding: 0.75rem 1.5rem;
+text-align: left;
+cursor: pointer;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: space-between;
+transition: border 0.2s ease;
 }
 
+.faq-question::after {
+content: 'v';
+color: gray;
+font-size: 0.9rem;
+transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question::after {
+transform: rotate(-90deg); /* Rotate arrow when open */
+}
+
+
 .faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease, padding 0.3s ease;
-  padding: 0 0;
+font-family: "Montserrat", sans-serif;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.4s ease, padding 0.3s ease;
+padding: 0 0;
 }
 
 .faq-item.active .faq-answer {
-  max-height: 500px; /* Allow room for longer answers */
-  padding: 0.5rem 0;
+max-height: 500px; /* Allow room for longer answers */
+padding: 0.5rem 0;
 }
