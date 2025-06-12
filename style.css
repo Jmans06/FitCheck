@@ -50,7 +50,7 @@ body {
   margin: 1rem 0;
   font-size: medium;
   color: #000000;
-  padding: 0 11rem
+  padding: 0 1rem
 }
 
 .form {
@@ -132,6 +132,7 @@ max-height: 0;
 overflow: hidden;
 transition: max-height 0.4s ease, padding 0.3s ease;
 padding: 0 0;
+text-align: center;
 }
 
 .faq-item.active .faq-answer {
