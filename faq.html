@@ -15,14 +15,14 @@
 <body>
 
   <header class="top-nav">
-    <h1 href="index.html" class="logo">FITCHECK</h1>
+    <h1 href="index.html" class="logo">FITCHECK.</h1>
     <a href="index.html" class="faq-link">Home</a>
   </header>
 
   <hr class="divider" />
 
   <main class="main-content">
-    <h2>Frequently Asked Questions</h2>
+    <h2>FAQ</h2>
     <div class="faq-container">
       <div class="faq-item">
         <button class="faq-question">What is FitCheck?</button>
@@ -105,9 +105,6 @@
       const question = item.querySelector('.faq-question');
 
       question.addEventListener('click', () => {
-        faqItems.forEach(i => {
-          if (i !== item) i.classList.remove('active');
-        });
         item.classList.toggle('active');
       });
     });

@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FITCHECK</title>
@@ -9,20 +15,33 @@
 <body>
 
   <header class="top-nav">
-    <h1 href="index.html" class="logo">FITCHECK</h1>
+    <h1 href="index.html" class="logo">FITCHECK.</h1>
     <a href="faq.html" class="faq-link">Frequently Asked Questions</a>
   </header>
 
   <hr class="divider" />
 
   <main class="main-content">
-    <h2>Get Your Perfect Fit.</h2>
-    <p>We’re building a tool to help you find your best style. Sign up below to join the waitlist.</p>
+    <p class="description">FitCheck is a social polling app that allows users to post fashion questions in the form of a poll and get real-time votes. Users can ask anything from what tie to wear to a wedding to what color they should paint their nails.</p>
 
+    <div class="grid-container">
+  <div class="grid-item">
+    <img src="fitcheck1.png" alt="image 1" class="grid-image" />
+  </div>
+  <div class="grid-item">
+    <img src="fitcheck2.png" alt="image 2" class="grid-image" />
+  </div>
+  <div class="grid-item">
+    <img src="fitcheck3.png" alt="image 3" class="grid-image" />
+  </div>
+  <div class="grid-item form-column">
     <form id="email-form" action="https://script.google.com/macros/s/AKfycbxojxvZdcj2Uge63kMnnvStkIGfZa6iQjRsjDG-pvXP7HdXYAItr_gznHxhvvWiaGV9rQ/exec" method="POST">
-        <input type="email" name="email" placeholder="enter your email" required />
-        <button type="submit">Join Waitlist</button>
-      </form>      
+      <input type="email" name="email" placeholder="enter your email" required />
+      <button type="submit">Join Waitlist</button>
+    </form>
+  </div>
+</div>
+      
   </main>
 
   <script>
