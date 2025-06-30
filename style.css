@@ -242,3 +242,7 @@ h2 a {
 .shifted-image{
   transform: translateX(-10px);
 }
+
+.reduced-image{
+  transform: scale(0.98);
+}
