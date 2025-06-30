@@ -246,3 +246,7 @@ h2 a {
 .reduced-image{
   transform: scale(0.99);
 }
+
+.increased-image{
+  transform: scale(1.01);
+}
