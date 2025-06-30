@@ -238,3 +238,7 @@ h2 a {
   text-decoration: none;
   color: inherit;
 }
+
+.shifted-image{
+  transform: translateX(-20px);
+}
