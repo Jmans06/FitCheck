@@ -238,15 +238,3 @@ h2 a {
   text-decoration: none;
   color: inherit;
 }
-
-.shifted-image{
-  transform: translateX(-18px);
-}
-
-.reduced-image{
-  transform: scale(0.99);
-}
-
-.increased-image{
-  transform: scale(1.02);
-}
