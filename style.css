@@ -238,3 +238,7 @@ h2 a {
   text-decoration: none;
   color: inherit;
 }
+
+.increased-image{
+  transform: scale(3);
+}
