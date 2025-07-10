@@ -30,7 +30,7 @@ body {
 }
 
 .divider {
-  width: 100vw; /* full viewport width */
+  width: 100vw;
   height: 1px;
   background-color: #ccc;
   border: none;
@@ -101,7 +101,7 @@ color: black;
 width: 100%;
 background: none;
 border: 1px solid #ccc;
-border-radius: 999px; /* Oval shape */
+border-radius: 999px;
 font-weight: 500;
 font-size: 1rem;
 padding: 0.75rem 1.5rem;
@@ -122,7 +122,7 @@ transition: transform 0.3s ease;
 }
 
 .faq-item.active .faq-question::after {
-transform: rotate(90deg); /* Rotate arrow when open */
+transform: rotate(90deg);
 }
 
 
@@ -132,15 +132,15 @@ max-height: 0;
 overflow: hidden;
 transition: max-height 0.4s ease, padding 0.3s ease;
 padding: 0 0;
-text-align: center;
+text-align: left;
 }
 
 .faq-item.active .faq-answer {
-max-height: 500px; /* Allow room for longer answers */
+max-height: none; 
 padding: 0.5rem 0;
 }
 
-/* === Grid Layout === */
+
 .grid-container {
 display: grid;
 grid-template-columns: repeat(4, 1fr);
@@ -164,7 +164,6 @@ border-radius: 12px;
 object-fit: cover;
 }
 
-/* === Form Column Specific === */
 .form-column form {
 display: flex;
 flex-direction: column;
@@ -173,8 +172,8 @@ gap: 1rem;
 }
 .form-column {
 display: flex;
-flex-direction: column;   /* Stack items vertically */
-align-items: center;      /* Center contents horizontally */
+flex-direction: column;
+align-items: center;
 padding: 1rem;
 text-align: center;
 }
@@ -207,7 +206,6 @@ cursor: pointer;
 background-color: #333;
 }
 
-/* === Responsive for Mobile === */
 @media (max-width: 768px) {
 .grid-container {
   grid-template-columns: 1fr;
