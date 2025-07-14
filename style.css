@@ -34,7 +34,7 @@ body {
   height: 1px;
   background-color: #ccc;
   border: none;
-  margin: 0rem 0 4rem;
+  margin: 0rem 0 2rem;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
