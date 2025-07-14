@@ -168,12 +168,16 @@ align-items: center;
 }
 
 .grid-image {
-width: 100%;
-max-width: 100%;
-border-radius: 12px;
-object-fit: cover;
-overflow: hidden;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin: 1rem;
 }
+
 
 .form-column form {
 display: flex;
