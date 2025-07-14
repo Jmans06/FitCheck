@@ -47,7 +47,7 @@ body {
 }
 
 .main-content p {
-  margin-top: 0rem;
+  margin: 0.75rem;
   font-size: medium;
   color: #000000;
   padding: 0;
