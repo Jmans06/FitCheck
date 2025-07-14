@@ -157,8 +157,8 @@ align-items: center;
 }
 
 .grid-image {
-width: auto;
-height: auto;
+width: 100%;
+max-width: 100%;
 border-radius: 12px;
 object-fit: cover;
 overflow: hidden;
