@@ -157,11 +157,7 @@ align-items: center;
 }
 
 .grid-image {
-width: 100%;
-max-width: 100%;
-height: auto;
 border-radius: 12px;
-object-fit: cover;
 }
 
 .form-column form {
