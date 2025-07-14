@@ -169,7 +169,7 @@ align-items: center;
 
 .grid-image {
   width: 100%;
-  max-width: 700px;
+  max-width: 1080px;
   height: auto;
   border-radius: 12px;
   object-fit: cover;
