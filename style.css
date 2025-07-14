@@ -168,7 +168,7 @@ align-items: center;
 }
 
 .grid-image {
-  transform: scale(1.35);
+  transform: scale(1.5);
   width: 100%;
   max-width: 1080px;
   height: auto;
