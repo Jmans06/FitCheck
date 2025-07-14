@@ -3,6 +3,7 @@ body {
   text-align: center;
   padding: 2rem;
   margin: 0;
+  background-color: #FFF9F5;
 }
 
 .top-nav {
@@ -42,14 +43,14 @@ body {
 
 .main-content h2 {
   font-family: "Playfair Display", serif;
-  font-size: 45px;
+  font-size: 80px;
   font-weight: 150;
 }
 
 .main-content p {
   margin-top: 0px;
   margin-bottom: 10px;
-  font-size: medium;
+  font-size: 17px;
   color: #000000;
   padding: 0 1rem
 }
@@ -81,6 +82,7 @@ input[type="email"] {
   margin-right: 0.5rem;
   border: 1px solid #aaa;
   border-radius: 4px;
+  align-items: center;
 }
 
 button {
@@ -197,10 +199,11 @@ font-family: "Montserrat", sans-serif;
 width: 100%;
 max-width: 250px;
 padding: 0.65rem 1rem;
-font-size: 1rem;
+font-size: 1.05rem;
 font-weight: 400;
 border: 1px solid #ccc;
 border-radius: 999px;
+text-align: center;
 }
 
 .form-column button {
