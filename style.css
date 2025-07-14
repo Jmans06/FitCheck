@@ -168,15 +168,13 @@ align-items: center;
 }
 
 .grid-image {
-  transform: scale(1.2);
+  transform: scale(1.4);
   width: 100%;
   max-width: 1080px;
   height: auto;
   border-radius: 12px;
   object-fit: cover;
   box-sizing: border-box;
-  padding: 1rem;
-  margin: 1rem;
 }
 
 
