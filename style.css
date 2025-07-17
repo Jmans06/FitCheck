@@ -3,7 +3,7 @@ body {
   text-align: center;
   padding: 2rem;
   margin: 0;
-  background-color: #FFF9F5;
+  background-color: #FFF8F4;
 }
 
 .top-nav {
@@ -17,7 +17,7 @@ body {
   font-family: "Playfair Display", serif;
   font-weight: 475;
   margin: auto;
-  font-size: 200;
+  font-size: 250;
 }
 
 .faq-link {
