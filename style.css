@@ -3,7 +3,7 @@ body {
   text-align: center;
   padding: 2rem;
   margin: 0;
-  background-color: #FFF8F4;
+  background-color: #FFF9F5;
 }
 
 .top-nav {
@@ -43,14 +43,14 @@ body {
 
 .main-content h2 {
   font-family: "Playfair Display", serif;
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 150;
 }
 
 .main-content p {
   margin-top: 0px;
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 18px;
   color: #000000;
   padding: 0 1rem
 }
@@ -224,8 +224,8 @@ background-color: #333;
 
 @media (max-width: 768px) {
 .grid-item1 {
-  margin-right: -11rem;
-  margin-left: -9rem;
+  margin-right: -8.5rem;
+  margin-left: -8.5rem;
 }
 }
 
