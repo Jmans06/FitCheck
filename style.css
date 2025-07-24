@@ -3,7 +3,7 @@ body {
   text-align: center;
   padding: 2rem;
   margin: 0;
-  background-color: #FFF9F5;
+  background: linear-gradient(to bottom, #FFFFFF 0%, #FFF7F3 100%);
 }
 
 .top-nav {
