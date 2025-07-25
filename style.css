@@ -186,8 +186,8 @@ align-items: center;
 @media (min-width: 769px) {
   .grid-image {
     position: relative;
-    right: -15px;  /* moves image 15px closer to the right edge */
-    max-width: calc(100% - 15px); /* ensure it doesn’t overflow container */
+    right: -20px;  /* moves image 15px closer to the right edge */
+    max-width: calc(100% - 20px); /* ensure it doesn’t overflow container */
   }
 }
 
