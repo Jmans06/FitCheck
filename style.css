@@ -4,6 +4,7 @@ body {
   padding: 2rem;
   margin: 0;
   background: linear-gradient(to bottom, #FFFFFF 0%, #FFF7F3 100%);
+
 }
 
 .top-nav {
@@ -39,7 +40,11 @@ body {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-}
+  z-index: 1;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 1),
+    0 15px 13px rgba(0, 0, 0, 1),
+    0 30px 15px rgba(0, 0, 0, 0.15);
+  }
 
 .main-content h2 {
   font-family: "Playfair Display", serif;
@@ -178,6 +183,13 @@ align-items: center;
   box-sizing: border-box;
 }
 
+@media (min-width: 769px) {
+  .grid-image {
+    position: relative;
+    right: -15px;  /* moves image 15px closer to the right edge */
+    max-width: calc(100% - 15px); /* ensure it doesn’t overflow container */
+  }
+}
 
 .form-column form {
 display: flex;
