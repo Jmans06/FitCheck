@@ -36,7 +36,7 @@ body {
   height: 1px;
   background-color: #ccc;
   border: none;
-  margin: 0rem 0 2rem;
+  margin: 0rem 0 3rem;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -186,8 +186,8 @@ align-items: center;
 @media (min-width: 769px) {
   .grid-image {
     position: relative;
-    right: -25px;  /* moves image 15px closer to the right edge */
-    max-width: calc(100% - 20px); /* ensure it doesn’t overflow container */
+    right: -28px;  /* moves image 15px closer to the right edge */
+    max-width: calc(100% - 28px); /* ensure it doesn’t overflow container */
   }
 }
 
@@ -216,6 +216,7 @@ font-weight: 400;
 border: 1px solid #ccc;
 border-radius: 999px;
 text-align: center;
+margin-bottom: -0.5rem;
 }
 
 .form-column button {
@@ -228,6 +229,7 @@ color: white;
 border: none;
 border-radius: 999px;
 cursor: pointer;
+margin-bottom: 2rem;
 }
 
 .form-column button:hover {
